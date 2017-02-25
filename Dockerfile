@@ -1,6 +1,4 @@
-FROM gliderlabs/alpine:3.3
-
-RUN apk add --no-cache procps
+FROM alpine:3.5
 
 RUN addgroup -S centrifugo && adduser -S -G centrifugo centrifugo \
     && mkdir /centrifugo && chown centrifugo:centrifugo /centrifugo \
