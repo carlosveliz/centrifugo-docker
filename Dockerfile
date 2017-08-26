@@ -1,4 +1,4 @@
-FROM alpine:3.5
+FROM alpine:latest
 
 RUN addgroup -S centrifugo && adduser -S -G centrifugo centrifugo \
     && mkdir /centrifugo && chown centrifugo:centrifugo /centrifugo \
